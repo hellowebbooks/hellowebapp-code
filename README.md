@@ -30,4 +30,4 @@ here:
 # License
 
 The code in this repository is licensed under the terms of the MIT license. This
-does not apply to the content in the _Hello Web App_ book, which is copyrighted. :) 
+does not apply to the content in the _Hello Web App_ book, which is copyrighted. :)
