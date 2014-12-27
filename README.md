@@ -7,4 +7,4 @@ at the end of that chapter. Use this to check for mistakes or typos in your own
 code!
 
 Next chapter:
-[https://github.com/limedaring/HelloWebApp-Code/tree/chapter-4](https://github.com/limedaring/HelloWebApp-Code/tree/chapter-4)
+[https://github.com/limedaring/HelloWebApp-Code/tree/chapter-5](https://github.com/limedaring/HelloWebApp-Code/tree/chapter-5)
