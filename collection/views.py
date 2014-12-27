@@ -5,7 +5,7 @@ from django.template.defaultfilters import slugify
 
 from collection.forms import ThingForm
 from collection.models import Thing
-from collection.forms import EditThingForm
+from collection.forms import ThingForm
 
 
 # the rewritten view!
