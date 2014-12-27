@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.contrib.auth.views import password_reset, password_reset_done, password_reset_confirm, password_reset_complete
 from django.views.generic import TemplateView
 
+from collection.backends import MyRegistrationView
 from collection import views
 
 
@@ -26,6 +27,11 @@ urlpatterns = [
         {'template_name': 'registration/password_reset_complete.html'},
         name="password_reset_complete"),
 
+    path('accounts/register/',
+        MyRegistrationView.as_view(), name='registration_register'),
+    path('accounts/create_thing/', 
+        views.create_thing, name='registration_create_thing'),
+
     path('accounts/', include('registration.backends.simple.urls')),
-    path('admin/', admin.site.urls), 
+    path('admin/', admin.site.urls),
 ]
