@@ -2,9 +2,13 @@ Hello Web App's Code
 ====================
 
 This is the repository for the code for Hello Web App. Change chapters by
-switching tags (button "branch:master") above - code will be at the state it is
+switching branches (button "branch:master") above - code will be at the state it is
 at the end of that chapter. Use this to check for mistakes or typos in your own
-code!
+code as you go through Hello Web App's tutorial!
 
-Next chapter:
-[https://github.com/hellowebbooks/HelloWebApp-Code/tree/chapter-14](https://github.com/hellowebbooks/HelloWebApp-Code/tree/chapter-14)
+Find out more and buy the book here:
+[https://HelloWebBooks.com/learn-django](https://HelloWebBooks.com/learn-django)
+
+Our main repository with installation instructions and other tips can be found
+here:
+[https://github.com/hellowebbooks/HelloWebApp](https://github.com/hellowebbooks/HelloWebApp)
