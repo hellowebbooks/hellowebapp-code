@@ -27,5 +27,5 @@ urlpatterns = [
         name="password_reset_complete"),
 
     path('accounts/', include('registration.backends.simple.urls')),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), 
 ]
