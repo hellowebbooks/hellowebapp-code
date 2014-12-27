@@ -3,6 +3,7 @@ from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
 from django.urls import path, include
 from django.views.generic import TemplateView
 
+from collection.backends import MyRegistrationView
 from collection import views
 
 
@@ -28,6 +29,11 @@ urlpatterns = [
     path('accounts/password/done/',
         PasswordResetDoneView.as_view(template_name='registration/password_reset_complete.html'),
         name='password_reset_complete'),
+
+    path('accounts/register/',
+        MyRegistrationView.as_view(), name='registration_register'),
+    path('accounts/create_thing/', 
+        views.create_thing, name='registration_create_thing'),
 
     path('accounts/', include('registration.backends.simple.urls')),
     path('admin/', admin.site.urls),
