@@ -6,6 +6,7 @@ from django.template.defaultfilters import slugify
 from collection.forms import ThingForm
 from collection.models import Thing
 
+
 # the rewritten view!
 def index(request):
     things = Thing.objects.all()
