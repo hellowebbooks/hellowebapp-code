@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+    Registration Form - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <h1>Registration Form</h1>
+    <form role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
+{% endblock content %}
