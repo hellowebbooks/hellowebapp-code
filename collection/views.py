@@ -4,7 +4,7 @@ from collection.forms import ThingForm
 from collection.models import Thing
 
 
-# the rewritten view!
+
 def index(request):
     number = 6
     # don't forget the quotes because it's a string, not an integer
