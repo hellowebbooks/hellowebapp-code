@@ -3,6 +3,7 @@ from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
 from django.urls import path, include
 from django.views.generic import TemplateView
 
+from collection.backends import MyRegistrationView
 from collection import views
 
 
