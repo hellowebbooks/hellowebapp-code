@@ -7,7 +7,7 @@ from collection.forms import ThingForm
 from collection.models import Thing
 
 
-# the rewritten view!
+
 def index(request):
     things = Thing.objects.all()
     return render(request, 'index.html', {
@@ -25,9 +25,15 @@ def thing_detail(request, slug):
     })
 
 
+@login_required
 def edit_thing(request, slug):
     # grab the object...
     thing = Thing.objects.get(slug=slug)
+
+    # grab the current logged in user and make sure they're the owner of the thing
+    user = request.user
+    if thing.user != user:
+        raise Http404
 
     # set the form we're using...
     form_class = ThingForm
@@ -54,6 +60,9 @@ def edit_thing(request, slug):
 
 
 def create_thing(request):
+    # request.user is the logged in user, we're going to assign it to "user" to make it easy
+    user = request.user
+
     form_class = ThingForm
 
     # if we're coming from a submitted form, do this
