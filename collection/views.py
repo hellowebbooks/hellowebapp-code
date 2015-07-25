@@ -31,8 +31,7 @@ def edit_thing(request, slug):
     thing = Thing.objects.get(slug=slug)
 
     # grab the current logged in user and make sure they're the owner of the thing
-    user = request.user
-    if thing.user != user:
+    if thing.user != request.user:
         raise Http404
 
     # set the form we're using...
@@ -60,9 +59,6 @@ def edit_thing(request, slug):
 
 
 def create_thing(request):
-    # request.user is the logged in user, we're going to assign it to "user" to make it easy
-    user = request.user
-
     form_class = ThingForm
 
     # if we're coming from a submitted form, do this
