@@ -1,6 +1,6 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
 
 
 def index(request):
    # this is your new view
-   return render_to_response('index.html')
+   return render(request, 'index.html')
