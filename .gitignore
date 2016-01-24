@@ -2,6 +2,16 @@ db.sqlite3
 venv
 *.pyc
 staticfiles
+.DS_STORE
+*.zip
+*.csv
+*.png
+*.jpeg
+*.jpg
+.env*
+settings_local.py
+post-double.py
+labels
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
