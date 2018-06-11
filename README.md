@@ -12,8 +12,6 @@ Find out more and buy the book here:
 Our main repository with installation instructions and other tips can be found
 here:
 [https://github.com/hellowebbooks/HelloWebApp](https://github.com/hellowebbooks/HelloWebApp)
-<<<<<<< HEAD
-=======
 
 ## Chapters
 
@@ -32,9 +30,4 @@ here:
 # License
 
 The code in this repository is licensed under the terms of the MIT license. This
-<<<<<<< HEAD
-does not apply to the content in the _Hello Web App_ book, which is copyrighted. :)
->>>>>>> 32f84df... End of Chapter 13
-=======
 does not apply to the content in the _Hello Web App_ book, which is copyrighted. :) 
->>>>>>> acdb0ca... Changed links from limedaring to hellowebapp
