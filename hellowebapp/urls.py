@@ -14,14 +14,14 @@ urlpatterns = [
     path('contact/',
         TemplateView.as_view(template_name='contact.html'), name='contact'),
 
-    path('things/', RedirectView.as_view(pattern_name='browse')),
+    path('things/', RedirectView.as_view(pattern_name='browse', permanent=True)),
     path('things/<slug>/', views.thing_detail, name='thing_detail'),
     path('things/<slug>/edit/', views.edit_thing, name='edit_thing'),
 
-    path('browse/', RedirectView.as_view(pattern_name='browse')),
+    path('browse/', RedirectView.as_view(pattern_name='browse', permanent=True)),
     path('browse/name/',
         views.browse_by_name, name='browse'),
-    path('browse/name/<initial>/', 
+    path('browse/name/<initial>/',
         views.browse_by_name, name='browse_by_name'),
 
     path('accounts/password/reset/', password_reset,
