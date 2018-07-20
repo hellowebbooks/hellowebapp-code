@@ -7,7 +7,6 @@ from collection.forms import ThingForm
 from collection.models import Thing
 
 
-
 def index(request):
     things = Thing.objects.all()
     return render(request, 'index.html', {
