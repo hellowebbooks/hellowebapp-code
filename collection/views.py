@@ -15,14 +15,6 @@ def index(request):
         'thing': thing,
     })
 
-def thing_detail(request, slug):
-    # grab the object...
-    thing = Thing.objects.get(slug=slug)
-    # and pass to the template
-    return render(request, 'things/thing_detail.html', {
-        'thing': thing,
-    })
-
 
 def thing_detail(request, slug):
     # grab the object...
@@ -41,7 +33,7 @@ def edit_thing(request, slug):
     # set the form we're using...
     form_class = ThingForm
 
-    # if we're coming to this view from a submitted form,  
+    # if we're coming to this view from a submitted form,
     if request.method == 'POST':
         # grab the data from the submitted form
         form = form_class(data=request.POST, instance=thing)
