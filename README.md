@@ -13,6 +13,8 @@ Our main repository with installation instructions and other tips can be found
 here:
 [https://github.com/hellowebbooks/HelloWebApp](https://github.com/hellowebbooks/HelloWebApp)
 
+Current Django version for this code: Django 2.1.7
+
 ## Chapters
 
 * [Chapter 3](https://github.com/hellowebbooks/HelloWebApp-Code/tree/chapter-3)
@@ -30,4 +32,4 @@ here:
 # License
 
 The code in this repository is licensed under the terms of the MIT license. This
-does not apply to the content in the _Hello Web App_ book, which is copyrighted. :) 
+does not apply to the content in the _Hello Web App_ book, which is copyrighted. :)
