@@ -13,7 +13,7 @@ Our main repository with installation instructions and other tips can be found
 here:
 [https://github.com/hellowebbooks/HelloWebApp](https://github.com/hellowebbooks/HelloWebApp)
 
-Current Django version for this code: Django 2.1.7
+Current Django version for this code: __Django 2.1.7__
 
 ## Chapters
 
