@@ -1,13 +1,13 @@
 Hello Web App's Code
 ====================
 
-This is the repository for the code for Hello Web App. Change chapters by
+This is the repository for the code for _Hello Web App_. Change chapters by
 switching branches (button "branch:master") above - code will be at the state it is
 at the end of that chapter. Use this to check for mistakes or typos in your own
-code as you go through Hello Web App's tutorial!
+code as you go through _Hello Web App_'s tutorial!
 
 Find out more and buy the book here:
-[https://HelloWebBooks.com/learn-django/](https://HelloWebBooks.com/learn-django/)
+[https://HelloWebBooks.com/learn-django](https://HelloWebBooks.com/learn-django)
 
 Our main repository with installation instructions and other tips can be found
 here:

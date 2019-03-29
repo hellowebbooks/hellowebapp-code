@@ -8,4 +8,4 @@ class CollectionTest(TestCase):
 
     def test_no_logic_page(self):
         r = self.client.get('/about/')
-        self.assertEqual(r.status_code, 200) 
+        self.assertEqual(r.status_code, 200)
