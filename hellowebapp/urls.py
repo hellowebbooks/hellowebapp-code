@@ -11,7 +11,7 @@ urlpatterns = [
         TemplateView.as_view(template_name='about.html'), name='about'),
     path('contact/',
         TemplateView.as_view(template_name='contact.html'), name='contact'),
-    url(r'^things/(?P<slug>[-\w]+)/$',
+    path('things/<slug>/$',
         views.thing_detail, name='thing_detail'),
-    url(r'^admin/', include(admin.site.urls)),
+    path('admin/', admin.site.urls),
 ]
