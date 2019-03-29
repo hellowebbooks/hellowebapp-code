@@ -25,9 +25,14 @@ def thing_detail(request, slug):
     })
 
 
+@login_required
 def edit_thing(request, slug):
     # grab the object...
     thing = Thing.objects.get(slug=slug)
+
+    # grab the current logged in user and make sure they're the owner of the thing
+    if thing.user != request.user:
+        raise Http404
 
     # set the form we're using...
     form_class = ThingForm
@@ -53,12 +58,12 @@ def edit_thing(request, slug):
     })
 
 
-# add below your edit_thing view
 def create_thing(request):
     form_class = ThingForm
+
     # if we're coming from a submitted form, do this
     if request.method == 'POST':
-        # grab the data from the submitted form and apply to # the form
+        # grab the data from the submitted form and apply to the form
         form = form_class(request.POST)
 
         if form.is_valid():

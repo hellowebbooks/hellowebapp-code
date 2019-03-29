@@ -32,7 +32,7 @@ urlpatterns = [
 
     path('accounts/register/',
         MyRegistrationView.as_view(), name='registration_register'),
-    path('accounts/create_thing/', 
+    path('accounts/create_thing/',
         views.create_thing, name='registration_create_thing'),
 
     path('accounts/', include('registration.backends.simple.urls')),
