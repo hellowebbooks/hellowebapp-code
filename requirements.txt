@@ -1,4 +1,4 @@
-Django==2.1
+Django==2.1.7
 django-registration-redux==2.5
 pytz==2017.3
 hellowebapp-deploy
